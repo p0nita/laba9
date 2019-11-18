@@ -10,7 +10,7 @@ public class Main {
         son1.setOther(mom1);
         Thread wt1 = new Thread(new WorkerMother(mom1, o));
         Thread wt2 = new Thread(new WorkerSon(son1, o));
-        wt1.start();
+        wt1.start(); 
         System.out.println("thread_1 is run!");
         wt2.start();
         System.out.println("thread_2 is run!");
